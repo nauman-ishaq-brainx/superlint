@@ -1,5 +1,2 @@
-
-var a = 3;
-var b = 4;
-
-
+const a = 3;
+const b = 4;
