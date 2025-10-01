@@ -4,7 +4,12 @@
   "description": "this is a demo repo.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "ESLINT_USE_FLAT_CONFIG=false eslint .",
+    "lint:fix": "ESLINT_USE_FLAT_CONFIG=false eslint . --fix",
+    "format": "prettier --check .",
+    "format:fix": "prettier --write .",
+    "lint:all": "npm run lint && npm run format"
   },
   "repository": {
     "type": "git",
