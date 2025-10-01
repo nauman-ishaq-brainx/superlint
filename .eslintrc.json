@@ -1,0 +1,40 @@
+{
+    "env": {
+      "browser": true,
+      "es6": true,
+      "node": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:prettier/recommended"
+    ],
+    "plugins": ["prettier"],
+    "parserOptions": {
+      "ecmaVersion": 2020,
+      "sourceType": "script"
+    },
+    "rules": {
+      "prettier/prettier": "error",
+      "no-var": "error",
+      "prefer-const": "error",
+      "no-unused-vars": "warn",
+      "no-undef": "error",
+      "no-redeclare": "error",
+      "func-names": ["error", "always"],
+      "prefer-arrow-callback": "error",
+      "max-params": ["error", 4],
+      "no-console": "error",
+      "no-debugger": "error",
+      "no-alert": "error",
+      "max-len": ["error", { "code": 100 }],
+      "max-lines": ["error", { "max": 300 }],
+      "complexity": ["error", 15],
+      "no-duplicate-imports": "error",
+      "no-unreachable": "error",
+      "no-constant-condition": "error",
+      "no-eval": "error",
+      "no-implied-eval": "error",
+      "no-new-func": "error",
+      "no-script-url": "error"
+    }
+  }
