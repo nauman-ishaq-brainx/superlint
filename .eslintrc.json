@@ -1,40 +1,59 @@
 {
+    // Environment settings - defines global variables available in different environments
     "env": {
-      "browser": true,
-      "es6": true,
-      "node": true
+      "browser": true,  // Browser global variables (window, document, etc.)
+      "es6": true,      // ES6 global variables (Set, Map, Promise, etc.)
+      "node": true      // Node.js global variables (process, Buffer, etc.)
     },
+    // Extends base configurations
     "extends": [
-      "eslint:recommended",
-      "plugin:prettier/recommended"
+      "eslint:recommended",        // ESLint's recommended rule set
+      "plugin:prettier/recommended" // Prettier integration with ESLint
     ],
-    "plugins": ["prettier"],
+    // ESLint plugins used
+    "plugins": ["prettier"],  // Prettier plugin for code formatting integration
+    // Parser configuration
     "parserOptions": {
-      "ecmaVersion": 2020,
-      "sourceType": "script"
+      "ecmaVersion": 2020,  // ECMAScript version to support (ES2020 features)
+      "sourceType": "script" // Code is in script mode (not module)
     },
+    // Custom rules configuration
     "rules": {
-      "prettier/prettier": "error",
-      "no-var": "error",
-      "prefer-const": "error",
-      "no-unused-vars": "warn",
-      "no-undef": "error",
-      "no-redeclare": "error",
-      "func-names": ["error", "always"],
-      "prefer-arrow-callback": "error",
-      "max-params": ["error", 4],
-      "no-console": "error",
-      "no-debugger": "error",
-      "no-alert": "error",
-      "max-len": ["error", { "code": 100 }],
-      "max-lines": ["error", { "max": 300 }],
-      "complexity": ["error", 15],
-      "no-duplicate-imports": "error",
-      "no-unreachable": "error",
-      "no-constant-condition": "error",
-      "no-eval": "error",
-      "no-implied-eval": "error",
-      "no-new-func": "error",
-      "no-script-url": "error"
+      // Prettier integration
+      "prettier/prettier": "error",  // Enforce Prettier formatting rules
+      
+      // Variable declarations
+      "no-var": "error",             // Disallow var declarations (use let/const)
+      "prefer-const": "error",        // Require const for variables that are never reassigned
+      "no-unused-vars": "warn",       // Warn about unused variables
+      "no-undef": "error",            // Disallow use of undeclared variables
+      "no-redeclare": "error",        // Disallow variable redeclaration
+      
+      // Function rules
+      "func-names": ["error", "always"], // Require function expressions to have a name
+      "prefer-arrow-callback": "error",   // Prefer arrow functions as callbacks
+      
+      // Debugging and development
+      "no-console": "error",          // Disallow console statements in production
+      "no-debugger": "error",         // Disallow debugger statements
+      "no-alert": "error",            // Disallow alert, confirm, and prompt
+      
+      // Code complexity and length
+      "max-len": ["error", { "code": 100 }], // Limit line length to 100 characters
+      "max-lines": ["error", { "max": 300 }], // Limit file length to 300 lines
+      "complexity": ["error", 15],            // Limit cyclomatic complexity to 15
+      
+      // Import/export rules
+      "no-duplicate-imports": "error", // Disallow duplicate imports
+      
+      // Code flow and logic
+      "no-unreachable": "error",       // Disallow unreachable code after return/throw
+      "no-constant-condition": "error", // Disallow constant expressions in conditions
+      
+      // Security and best practices
+      "no-eval": "error",              // Disallow eval() usage
+      "no-implied-eval": "error",      // Disallow implied eval() (setTimeout/setInterval with strings)
+      "no-new-func": "error",          // Disallow Function constructor
+      "no-script-url": "error"         // Disallow javascript: URLs
     }
   }
