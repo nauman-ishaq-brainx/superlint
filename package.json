@@ -19,7 +19,7 @@
   "homepage": "https://github.com/nauman-ishaq-brainx/superlint#readme",
   "lint-staged": {
     "*.js": [
-      "eslint --max-warnings=0 --quiet"
+      "eslint --max-warnings=0 "
     ],
     "!nestjs-linting-config/**/*.js": []
   },
