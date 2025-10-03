@@ -4,7 +4,15 @@
 // This file intentionally violates multiple linting rules to test the advanced configuration
 // Uncomment the advanced config in .eslintrc.json to see all violations
 
-import { Injectable, Controller, Get, Post, Body, Param, Module } from '@nestjs/common';
+import {
+  Injectable,
+  Controller,
+  Get,
+  Post,
+  Body,
+  Param,
+  Module
+} from '@nestjs/common';
 import { ApiTags, ApiProperty } from '@nestjs/swagger';
 import * as fs from 'fs';
 import * as path from 'path';
@@ -104,7 +112,8 @@ export class NoValidationController {
 @Controller('param-mismatch')
 export class ParamMismatchController {
   @Get(':userId')
-  getUser(@Param('id') id: string) { // Should be 'userId' not 'id'
+  getUser(@Param('id') id: string) {
+    // Should be 'userId' not 'id'
     return { id };
   }
 }
@@ -174,7 +183,13 @@ export default class DefaultExport {
 // ========================================
 
 // Violation: High cognitive complexity
-function tooComplexFunction(a: number, b: number, c: number, d: number, e: number) {
+function tooComplexFunction(
+  a: number,
+  b: number,
+  c: number,
+  d: number,
+  e: number
+) {
   if (a > 0) {
     if (b > 0) {
       if (c > 0) {
@@ -257,7 +272,7 @@ function notImmediateReturn(value: string) {
 
 // Violation: Promise without return
 function promiseWithoutReturn() {
-  return new Promise((resolve) => {
+  return new Promise(resolve => {
     resolve('value');
     // Missing return statement
   });
@@ -285,7 +300,7 @@ function promiseInCallback(callback: Function) {
 
 // Violation: Callback in promise
 function callbackInPromise() {
-  return new Promise((resolve) => {
+  return new Promise(resolve => {
     setTimeout(() => {
       resolve('callback in promise');
     }, 100);
@@ -400,7 +415,8 @@ confirm('Confirm not allowed');
 prompt('Prompt not allowed');
 
 // Violation: Long line (over 100 characters)
-const veryLongLine = 'This is an extremely long line that exceeds the maximum allowed length of 100 characters and should trigger an error';
+const veryLongLine =
+  'This is an extremely long line that exceeds the maximum allowed length of 100 characters and should trigger an error';
 
 // Violation: Too many lines in file (over 300 lines)
 // This file intentionally exceeds 300 lines to test max-lines rule
@@ -435,7 +451,7 @@ function inconsistentReturn(value: boolean) {
 
 // Violation: Async promise executor
 function asyncPromiseExecutor() {
-  return new Promise(async (resolve) => {
+  return new Promise(async resolve => {
     resolve('async executor');
   });
 }
@@ -457,7 +473,13 @@ function magicNumbers() {
 }
 
 // Violation: Too many parameters
-function tooManyParameters(a: number, b: number, c: number, d: number, e: number) {
+function tooManyParameters(
+  a: number,
+  b: number,
+  c: number,
+  d: number,
+  e: number
+) {
   return a + b + c + d + e;
 }
 
@@ -613,24 +635,64 @@ function additionalViolation20() {
 // ========================================
 
 export class FinalViolations {
-  method1() { return 'method1'; }
-  method2() { return 'method2'; }
-  method3() { return 'method3'; }
-  method4() { return 'method4'; }
-  method5() { return 'method5'; }
-  method6() { return 'method6'; }
-  method7() { return 'method7'; }
-  method8() { return 'method8'; }
-  method9() { return 'method9'; }
-  method10() { return 'method10'; }
-  method11() { return 'method11'; }
-  method12() { return 'method12'; }
-  method13() { return 'method13'; }
-  method14() { return 'method14'; }
-  method15() { return 'method15'; }
-  method16() { return 'method16'; }
-  method17() { return 'method17'; }
-  method18() { return 'method18'; }
-  method19() { return 'method19'; }
-  method20() { return 'method20'; }
+  method1() {
+    return 'method1';
+  }
+  method2() {
+    return 'method2';
+  }
+  method3() {
+    return 'method3';
+  }
+  method4() {
+    return 'method4';
+  }
+  method5() {
+    return 'method5';
+  }
+  method6() {
+    return 'method6';
+  }
+  method7() {
+    return 'method7';
+  }
+  method8() {
+    return 'method8';
+  }
+  method9() {
+    return 'method9';
+  }
+  method10() {
+    return 'method10';
+  }
+  method11() {
+    return 'method11';
+  }
+  method12() {
+    return 'method12';
+  }
+  method13() {
+    return 'method13';
+  }
+  method14() {
+    return 'method14';
+  }
+  method15() {
+    return 'method15';
+  }
+  method16() {
+    return 'method16';
+  }
+  method17() {
+    return 'method17';
+  }
+  method18() {
+    return 'method18';
+  }
+  method19() {
+    return 'method19';
+  }
+  method20() {
+    return 'method20';
+  }
 }
