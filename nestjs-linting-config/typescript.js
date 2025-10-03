@@ -24,16 +24,16 @@ module.exports = {
     '@typescript-eslint/no-unused-vars': 'error',
     // Prevents unused variables (TypeScript version of no-unused-vars)
 
-    '@typescript-eslint/prefer-readonly': 'error',
+    '@typescript-eslint/prefer-readonly': 'off', // Requires type checking
     // Encourages use of readonly for properties that shouldn't be modified
 
-    '@typescript-eslint/no-floating-promises': 'error',
+    '@typescript-eslint/no-floating-promises': 'off', // Requires type checking
     // Prevents promises that are not awaited or handled
 
-    '@typescript-eslint/await-thenable': 'error',
+    '@typescript-eslint/await-thenable': 'off', // Requires type checking
     // Ensures await is only used with thenable values
 
-    '@typescript-eslint/no-misused-promises': 'error',
+    '@typescript-eslint/no-misused-promises': 'off', // Requires type checking
     // Prevents misuse of promises in conditionals and loops
 
     '@typescript-eslint/require-await': 'warn',
