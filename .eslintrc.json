@@ -7,13 +7,11 @@
   "extends": [
     "eslint:recommended",
     "plugin:prettier/recommended"
-    // "./nestjs-linting-config/index.js"  // Temporarily disabled due to configuration issues
   ],
   "plugins": ["prettier"],
-  "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": 2020,
-    "sourceType": "module"
+    "sourceType": "script"
   },
   "rules": {
     "prettier/prettier": "error",
