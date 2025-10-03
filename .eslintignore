@@ -1,0 +1,4 @@
+# Ignore modular config files from linting
+nestjs-linting-config/
+node_modules/
+*.min.js
