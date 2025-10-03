@@ -20,7 +20,8 @@
   "lint-staged": {
     "*.js": [
       "eslint --max-warnings=0"
-    ]
+    ],
+    "!nestjs-linting-config/**/*.js": []
   },
   "devDependencies": {
     "eslint": "^9.36.0",

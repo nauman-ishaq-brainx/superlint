@@ -1,5 +1,6 @@
 // BUGGY TEST FILE - Intentionally violates ALL ESLint and Prettier rules
 // This file is designed to test the superlint configuration
+// Testing pre-commit hook with more bugs below
 
 // BUG 1: Using var instead of let/const (violates no-var rule)
 var oldStyleVariable = "This should be let or const";
