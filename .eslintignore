@@ -1,4 +1,16 @@
-# Ignore modular config files from linting
-nestjs-linting-config/
+# Dependencies and build output
 node_modules/
+dist/
+coverage/
+
+# Minified files
 *.min.js
+
+# Config files
+.eslintrc.js
+jest.config.js
+nest-cli.json
+
+# Linting config modules (not application code)
+nestjs-linting-config/
+nestjs-linting-config/**/*.js

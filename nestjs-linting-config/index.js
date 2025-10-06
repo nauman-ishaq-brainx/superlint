@@ -146,10 +146,8 @@ module.exports = {
     // Global variable rules
     'no-var': 'error', // No var declarations
     'prefer-const': 'error', // Prefer const for non-reassigned variables
-    'prefer-let': 'error', // Prefer let for reassigned variables
     'no-redeclare': 'error', // No variable redeclaration
     'no-undef': 'off', // Use TypeScript version
-    '@typescript-eslint/no-undef': 'error',
     'no-unused-vars': 'off', // Use TypeScript version
     '@typescript-eslint/no-unused-vars': 'error',
 
@@ -200,9 +198,7 @@ module.exports = {
     '@typescript-eslint/no-unnecessary-type-assertion': 'error', // No unnecessary type assertions
     '@typescript-eslint/no-var-requires': 'error', // No require() in TypeScript
     '@typescript-eslint/consistent-type-imports': 'error', // Consistent type imports
-    '@typescript-eslint/consistent-type-exports': 'error', // Consistent type exports
     '@typescript-eslint/prefer-function-type': 'error', // Prefer function types
-    '@typescript-eslint/prefer-type-alias': 'error', // Prefer type aliases
     '@typescript-eslint/no-empty-interface': 'error', // No empty interfaces
     '@typescript-eslint/no-extraneous-class': 'error', // No extraneous classes
     '@typescript-eslint/no-inferrable-types': 'error', // No inferrable types
@@ -280,16 +276,9 @@ module.exports = {
     'sonarjs/no-use-of-empty-return-value': 'error', // No use of empty return values
     'sonarjs/prefer-single-boolean-return': 'error', // Prefer single boolean return
     'sonarjs/prefer-while': 'error', // Prefer while loops
-    'sonarjs/no-gratuitous-expressions': 'error', // No gratuitous expressions
     'sonarjs/no-inverted-boolean-check': 'error', // No inverted boolean checks
     'sonarjs/no-nested-switch': 'error', // No nested switch statements
     'sonarjs/no-nested-template-literals': 'error', // No nested template literals
-    'sonarjs/no-redundant-parentheses': 'error', // No redundant parentheses
-    'sonarjs/no-unthrown-error': 'error', // No unthrown errors
-    'sonarjs/no-useless-catch': 'error', // No useless catch blocks
-    'sonarjs/prefer-object-literal': 'error', // Prefer object literals
-    'sonarjs/prefer-optional-chain': 'error', // Prefer optional chaining
-    'sonarjs/prefer-template': 'error', // Prefer template literals
 
     // Global JSDoc rules
     'jsdoc/require-jsdoc': [

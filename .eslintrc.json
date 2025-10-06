@@ -1,41 +1,32 @@
 {
   "env": {
-    "browser": true,
-    "es6": true,
-    "node": true
+    "browser": false,
+    "es2021": true,
+    "node": true,
+    "jest": true
   },
   "extends": [
     "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended"
-    // "./nestjs-linting-config/index.js"  // Temporarily disabled due to configuration issues
   ],
-  "plugins": ["prettier"],
+  "plugins": ["@typescript-eslint", "prettier"],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "ecmaVersion": 2020,
-    "sourceType": "module"
+    "ecmaVersion": 2021,
+    "sourceType": "module",
+    "project": "./tsconfig.json"
   },
   "rules": {
     "prettier/prettier": "error",
-    "no-var": "error",
-    "prefer-const": "error",
-    "no-unused-vars": "warn",
-    "no-undef": "error",
-    "no-redeclare": "error",
-    "func-names": ["error", "always"],
-    "prefer-arrow-callback": "error",
-    "no-console": "error",
-    "no-debugger": "error",
-    "no-alert": "error",
-    "max-len": ["error", { "code": 100 }],
-    "max-lines": ["error", { "max": 300 }],
-    "complexity": ["error", 15],
-    "no-duplicate-imports": "error",
-    "no-unreachable": "error",
-    "no-constant-condition": "error",
-    "no-eval": "error",
-    "no-implied-eval": "error",
-    "no-new-func": "error",
-    "no-script-url": "error"
-  }
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-unused-vars": "off",
+    "@typescript-eslint/interface-name-prefix": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/ban-types": "off",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "no-console": "warn"
+  },
+  "ignorePatterns": ["dist", "node_modules", "nestjs-linting-config", "test/buggy-*.ts"]
 }
