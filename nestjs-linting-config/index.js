@@ -187,17 +187,17 @@ module.exports = {
     // Global TypeScript rules
     '@typescript-eslint/no-explicit-any': 'error', // No any types
     '@typescript-eslint/explicit-function-return-type': 'warn', // Explicit return types
-    '@typescript-eslint/prefer-readonly': 'error', // Prefer readonly properties
-    '@typescript-eslint/no-floating-promises': 'error', // Handle all promises
-    '@typescript-eslint/await-thenable': 'error', // Await only thenables
-    '@typescript-eslint/no-misused-promises': 'error', // Proper promise usage
-    '@typescript-eslint/require-await': 'warn', // Warn about async without await
-    '@typescript-eslint/prefer-nullish-coalescing': 'error', // Use ?? operator
-    '@typescript-eslint/prefer-optional-chain': 'error', // Use ?. operator
-    '@typescript-eslint/no-unnecessary-condition': 'error', // No unnecessary conditions
-    '@typescript-eslint/no-unnecessary-type-arguments': 'error', // No unnecessary type arguments
+    '@typescript-eslint/prefer-readonly': 'off', // Requires type checking
+    '@typescript-eslint/no-floating-promises': 'off', // Requires type checking
+    '@typescript-eslint/await-thenable': 'off', // Requires type checking
+    '@typescript-eslint/no-misused-promises': 'off', // Requires type checking
+    '@typescript-eslint/require-await': 'off', // Requires type checking
+    '@typescript-eslint/prefer-nullish-coalescing': 'off', // Requires type checking
+    '@typescript-eslint/prefer-optional-chain': 'off', // Requires type checking
+    '@typescript-eslint/no-unnecessary-condition': 'off', // Requires type checking
+    '@typescript-eslint/no-unnecessary-type-arguments': 'off', // Requires type checking
     '@typescript-eslint/prefer-as-const': 'error', // Prefer 'as const'
-    '@typescript-eslint/no-unnecessary-type-assertion': 'error', // No unnecessary type assertions
+    '@typescript-eslint/no-unnecessary-type-assertion': 'off', // Requires type checking
     '@typescript-eslint/no-var-requires': 'error', // No require() in TypeScript
     '@typescript-eslint/consistent-type-imports': 'error', // Consistent type imports
     '@typescript-eslint/consistent-type-exports': 'error', // Consistent type exports
@@ -206,7 +206,7 @@ module.exports = {
     '@typescript-eslint/no-empty-interface': 'error', // No empty interfaces
     '@typescript-eslint/no-extraneous-class': 'error', // No extraneous classes
     '@typescript-eslint/no-inferrable-types': 'error', // No inferrable types
-    '@typescript-eslint/strict-boolean-expressions': 'error', // Strict boolean expressions
+    '@typescript-eslint/strict-boolean-expressions': 'off', // Requires type checking
 
     // Global import/export rules
     'import/no-unresolved': 'error', // No unresolved imports
