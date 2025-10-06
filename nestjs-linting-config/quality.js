@@ -166,8 +166,8 @@ module.exports = {
     'no-array-constructor': 'error',
     // Prevents Array constructor
 
-    'no-new-array': 'error',
-    // Prevents new Array() usage
+    'no-array-constructor': 'error',
+    // Prevents new Array() usage (corrected rule name)
 
     'prefer-spread': 'error',
     // Prefers spread operator over apply()
@@ -306,8 +306,8 @@ module.exports = {
     'no-new-wrappers': 'error',
     // Prevents wrapper object constructors
 
-    'no-new-array': 'error',
-    // Prevents new Array() usage
+    'no-array-constructor': 'error',
+    // Prevents new Array() usage (corrected rule name)
 
     'no-new-require': 'error',
     // Prevents new require() usage
